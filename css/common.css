@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap');
+/*
+Syncopate font -- font weight: 400, 700
+*/
+
+@font-face {
+    font-family: 'Montreal-Bold';
+    src: url('/css/PPNeueMontreal-Bold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Montreal-Medium';
+    src: url('/css/PPNeueMontreal-Medium.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Montreal';
+    src: url('/css/PPNeueMontreal-Book.otf') format('opentype');
+}
+
+
+
+* {
+    font-family: 'Montreal';
+}
+
+:root {
+    --mainColor: #190532;
+}
+
+.button-light {
+    border: 2px solid var(--mainColor);
+    width: fit-content;
+    text-align: center;
+    padding: 20px 40px;
+    box-sizing: border-box;
+
+    font-family: 'Montreal-Medium';
+    text-transform: uppercase;
+    cursor: pointer;
+}
