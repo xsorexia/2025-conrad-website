@@ -1,0 +1,118 @@
+@import url('/css/common.css');
+
+
+#s2-title, #s4-title {
+    font-size: 40px;
+}
+
+#sc-1 {
+    min-height: calc(100dvh - 90px);
+    padding-bottom: 90px !important;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: fit-content;
+
+    max-width: 1200px;
+    width: 100%;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    #section-1 {
+        width: 100%;
+        #s1-title-div {
+
+            #s1-buttons {
+
+
+                .btn {
+                    border: 2px solid var(--mainColor);
+                }
+            }
+        }
+    }
+
+}
+
+
+
+
+#sc-2 {
+    width: 100%;
+    background-color: var(--mainColor);
+
+    align-items: center;
+    #brand-identity {
+        width: 40%;
+        margin-left: 15%
+    }
+
+    #sc2-desc-div {
+        width: calc(60% - 15% - 50px);
+        margin-left: 50px;
+
+        .desc {
+            color: white;
+        }
+    }
+}
+
+#sc-4 {
+    flex-direction: column;
+    padding-top: 50px !important;
+
+    #section-4 {
+
+        #s4-title-div {
+            width: 100%;
+
+            #danche-image {
+                width: 60%;
+
+                margin-left: 20%;
+                margin-bottom: -5px;
+            }
+
+
+        }
+    }
+
+
+}
+
+#s4-member-desc-div {
+    width: 60%;
+    background-color: var(--mainColor);
+    display: flex;
+    flex-direction: row;
+    padding: 30px 10%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+
+    .member-desc {
+        width: 100%;
+
+
+        .member-role {
+            font-size: 12px;
+            background-color: white;
+            color: var(--mainColor);
+            width: fit-content;
+            padding: 5px 5px;
+        }
+        .member-name {
+            margin-top: 10px;
+            text-transform: uppercase;
+            font-family: 'Montreal-Medium';
+            font-size: 20px;
+            color: white;
+        }
+        .member-email {
+            margin-top: 10px;
+            font-size: 12px;
+            color: white;
+        }
+    }
+}

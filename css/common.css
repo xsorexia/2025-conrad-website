@@ -374,3 +374,14 @@ html {
         }
     }
 
+    .section-title-divs {
+        .section-title {
+            font-size: 50px;
+            text-transform: uppercase;
+        }
+        .section-buttons {
+            display: flex;
+            flex-direction: row;
+            gap: 5px;
+        }
+    }

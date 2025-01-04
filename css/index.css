@@ -1,17 +1,7 @@
 @import url('/css/common.css');
 
 
-.section-title-divs {
-    .section-title {
-        font-size: 50px;
-        text-transform: uppercase;
-    }
-    .section-buttons {
-        display: flex;
-        flex-direction: row;
-        gap: 5px;
-    }
-}
+
 
 #sc-1 {
     min-height: calc(100dvh - 90px);
