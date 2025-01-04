@@ -1,0 +1,48 @@
+@import url('/css/common.css');
+
+#sc-1 {
+    min-height: calc(100dvh - 90px);
+    padding-bottom: 90px !important;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: fit-content;
+
+    max-width: 1200px;
+    width: 100%;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    #section-1 {
+        width: calc(40% - 30px);
+        #s1-title-div {
+            #s1-title {
+                font-size: 50px;
+                text-transform: uppercase;
+            }
+
+            #s1-buttons {
+                display: flex;
+                flex-direction: row;
+                gap: 5px;
+
+                .btn {
+                    border: 2px solid var(--mainColor);
+                }
+            }
+        }
+    }
+
+    #sc1-model-img {
+        width: calc(60% + 200px);
+        margin-left: 30px;
+        margin-right: -200px;
+    }
+}
+
+
+#sc-2 {
+    height: 400px;
+    background-color: var(--mainColor);
+}
