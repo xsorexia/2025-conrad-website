@@ -25,17 +25,121 @@ Syncopate font -- font weight: 400, 700
 }
 
 :root {
-    --mainColor: #190532;
+    --mainColor: #223344;
 }
 
-.button-light {
-    border: 2px solid var(--mainColor);
+#buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.btn {
     width: fit-content;
     text-align: center;
-    padding: 20px 40px;
+    padding: 20px 60px;
     box-sizing: border-box;
 
-    font-family: 'Montreal-Medium';
-    text-transform: uppercase;
     cursor: pointer;
+    position: relative;
+
+    .btn-text {
+        font-family: 'Montreal-Medium';
+        font-size: 15px;
+        text-transform: uppercase;
+        z-index: 1;
+        position: relative;
+        transition: 0.2s;
+    }
+
+    .btn-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 0%;
+        height: 100%;
+        transition: 0.3s;
+        z-index: 0;
+    }
+}
+
+.btn:hover {
+    .btn-background {
+        width: 100%;
+    }
+}
+
+.btn-light {
+    border: 2px solid var(--mainColor);
+
+    .btn-text {
+        color: var(--mainColor);
+    }
+
+    .btn-background {
+        background-color: var(--mainColor);
+    }
+}
+
+.btn-light:hover {
+    .btn-text {
+        color: white
+    }
+}
+
+
+.btn-dark {
+    background-color: var(--mainColor);
+    border: 2px solid white;
+
+    .btn-text {
+        color: white;
+    }
+
+    .btn-background {
+        background-color: white;
+    }
+}
+
+.btn-dark:hover {
+    .btn-text {
+        color: var(--mainColor);
+    }
+}
+
+
+
+.logo-large {
+    font-size: 50px;
+}
+
+.logo-small {
+    font-size: 30px;
+}
+
+.logo {
+    font-family: 'Syncopate';
+    font-weight: 400;
+}
+
+.title {
+    font-family: 'Montreal-Medium';
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.desc {
+    
+    font-family: 'Montreal';
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.desc-bold {
+    font-family: 'Montreal-Medium';
+}
+
+.text-white {
+    color: white;
 }
