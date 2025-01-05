@@ -74,30 +74,105 @@
                 </div>
             </div>
         </div>
+        <div id="sc-o" class="section-container pricing-section-container">
+            <div id="section-o">
+                <div id="so-title" class="section-title">Select Orbit</div>
+                <div id="so-subtitle" onclick="pricingChangeType()" class="section-subtitle"><span id="so-subtitle-content">Other Orbits</span> <span id="so-type-change">[ CHANGE ]</span></div>
+                <div id="so-orbit-container">
+                    <div class="s-subcontainer">
+                        <div class="s-item btn btn-light" onclick="pricingSelectOrbit(1, this)">                            
+                            <div class="btn-text"><span>GTO</span>Geostationary</div>
+                            <div class="btn-background"></div>
+                        </div>
+                        <div class="s-item btn btn-light" onclick="pricingSelectOrbit(1, this)">
+                            <div class="btn-text"><span>LTO</span>Moon</div>
+                            <div class="btn-background"></div>
+                        </div>
+                    </div>
+                    <div class="s-subcontainer">
+                        <div class="s-item btn btn-light" onclick="pricingSelectOrbit(1, this)">
+                            <div class="btn-text"><span>MTO</span>Mars</div>
+                            <div class="btn-background"></div>
+                        </div>
+                        <div class="s-item btn btn-light" onclick="pricingSelectOrbit(1, this)">
+                            <div class="btn-text"><span>CTO</span>Cis-Lunar</div>
+                            <div class="btn-background"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div id="sc-2" class="section-container pricing-section-container">
             <div id="section-2">
-                <div id="s2-title">CubeSat Mass</div>
-                <div id="s2-subtitle" onclick="pricingChangeType()"><span id="s2-subtitle-content">Low Earth Orbit</span> <span id="s2-type-change">[ CHANGE ]</span></div>
+                <div id="s2-title" class="section-title">CubeSat Mass</div>
+                <div id="s2-subtitle" onclick="pricingChangeType()" class="section-subtitle"><span id="s2-subtitle-content">Low Earth Orbit</span> <span id="s2-type-change">[ CHANGE ]</span></div>
                 <div id="s2-mass-container">
-                    <div class="s2-mass-subcontainer">
-                        <div class="s2-mass-item btn btn-light">                            
+                    <div class="s-subcontainer">
+                        <div class="s-item btn btn-light" onclick="pricingSelectMass(1, this)">                            
                             <div class="btn-text">1-3kg</div>
                             <div class="btn-background"></div>
                         </div>
-                        <div class="s2-mass-item btn btn-light">
+                        <div class="s-item btn btn-light" onclick="pricingSelectMass(2, this)">
                             <div class="btn-text">3-5kg</div>
                             <div class="btn-background"></div>
                         </div>
                     </div>
-                    <div class="s2-mass-subcontainer">
-                        <div class="s2-mass-item btn btn-light">
+                    <div class="s-subcontainer">
+                        <div class="s-item btn btn-light" onclick="pricingSelectMass(3, this)">
                             <div class="btn-text">5-7kg</div>
                             <div class="btn-background"></div>
                         </div>
-                        <div class="s2-mass-item btn btn-dark">
+                        <div class="s-item btn btn-light" onclick="pricingSelectMass(4, this)">
                             <div class="btn-text">7kg or above</div>
                             <div class="btn-background"></div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="sc-3" class="section-container pricing-section-container">
+            <div id="section-3">
+                <div id="s3-title" class="section-title">Select Launch Type</div>
+                <div id="s3-subtitle" onclick="pricingChangeMass()" class="section-subtitle"><span id="s3-subtitle-content">dd</span> <span id="s3-type-change">[ CHANGE ]</span></div>
+
+                <div id="s3-priority-container">
+                    <div class="s-item btn btn-light" onclick="pricingSelectLaunch(1, this)">
+                        <div class="btn-text"><span>Standard</span><br><br>COCO LOCO</div>
+                        <div class="btn-background"></div>
+                    </div>
+                    <div class="s-item btn btn-dark" onclick="pricingSelectLaunch(2, this)">
+                        <div class="btn-text"><span>Priority</span><br><br>Immediate launch</div>
+                        <div class="btn-background"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="sc-4" class="section-container pricing-section-container">
+            <div id="section-4">
+                <div id="s4-left">
+                    <div class="s4-item">
+                        <div class="s4-item-title">Service</div>
+                        <div id="s4-service" class="s4-item-choice">Other Orbits</div>
+                    </div>
+                    <div class="s4-item">
+                        <div class="s4-item-title">Orbit</div>
+                        <div id="s4-orbit" class="s4-item-choice">Geostationary Transfer Orbit</div>
+                    </div>
+                    <div class="s4-item">
+                        <div class="s4-item-title">Mass</div>
+                        <div id="s4-mass" class="s4-item-choice">1-3kg</div>
+                    </div>
+                    <div class="s4-item">
+                        <div class="s4-item-title">Launch</div>
+                        <div id="s4-launch" class="s4-item-choice">Priority</div>
+                    </div>
+                </div>
+                <div id="s4-right">
+                    <div id="s4-title" class="sync-bold">ESTIMATED COST</div>
+                    <div id="s4-cost" class="sync">$140,000</div>
+                    <div class="s4-button btn btn-dark" onclick="pricingStartOver()">
+                        <div class="btn-text">START OVER</div>
+                        <div class="btn-background"></div>
                     </div>
                 </div>
             </div>

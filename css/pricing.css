@@ -3,11 +3,11 @@
 #content {
     display: flex;
     flex-direction: row;
-    width: 200vw;
+    width: 500vw;
 
     overflow-x: hidden;
     scroll-snap-type: x mandatory; /* Optional: Enables snap-to-section scrolling */
-    transition: 0.5s;
+    transition: 0.7s;
 }
 
 .pricing-section-container {
@@ -97,36 +97,40 @@
     }
 }
 
-#sc-2 {
+#sc-o {
+    visibility: hidden;
+}
 
-    #section-2 {
+#sc-2, #sc-o, #sc-3 {
+
+    #section-2, #section-o, #section-3 {
         color: var(--mainColor);
 
-        #s2-title {
+        .section-title {
             font-family: 'Syncopate';
             font-weight: 400;
             font-size: 25px;
         }
 
-        #s2-subtitle {
+        .section-subtitle {
 
             cursor: pointer;
 
-            #s2-subtitle-content {
+            #s2-subtitle-content, #so-subtitle-content, #s3-subtitle-content {
                 font-family: 'Syncopate';
                 font-weight: 700;
                 font-size: 15px;
             }
 
-            #s2-type-change {
+            #s2-type-change,#so-type-change, #s3-type-change {
                 cursor: pointer;
                 font-family: 'Montreal';
             }
 
         }
 
-        #s2-subtitle:hover {
-            #s2-type-change {
+        #s2-subtitle:hover,  #so-subtitle:hover, #s3-subtitle:hover {
+            #s2-type-change, #so-type-change {
                 text-decoration: underline;
             }
         }
@@ -143,10 +147,10 @@
         margin-left: auto;
         margin-right: auto;
 
-        #s2-mass-container {
+        #s2-mass-container, #so-orbit-container {
             margin-top: 50px;
             width: 100%;
-            .s2-mass-subcontainer {
+            .s-subcontainer {
                 width: 100%;
                 display: flex;
                 flex-direction: row;
@@ -155,7 +159,7 @@
                 gap: 10px;
                 margin-top: 10px;
 
-                .s2-mass-item {
+                .s-item {
                     width: 100%;
                     border: 2px solid var(--mainColor);
                     text-align: center;
@@ -164,10 +168,111 @@
                     padding-bottom: 50px;
                     .btn-text {
                         font-size: 15px;
+                        span {
+                            font-family: 'Montreal-Bold';
+                            padding-right: 10px;
+                        }
                     }
                 }
+            }
+        }
+
+        #s3-priority-container {
+            margin-top: 50px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+
+            .btn {
+                border: 2px solid var(--mainColor);
+
+                .btn-text {
+                    font-family: 'Montreal';
+
+    
+                    span {
+                        font-family: 'Montreal-Medium';
+                        font-size: 17px;
+                    }
+                }
+
             }
         }
     }
 
 }
+
+
+#sc-4 {
+    display: grid;
+    place-items: center;
+
+    #section-4 {
+        background-color: var(--mainColor);
+        color: white;
+    
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;;
+        height: fit-content;
+    
+        display: flex;
+        flex-direction: row;
+    
+        box-sizing: border-box;
+        padding: 50px 50px;
+
+        #s4-left {
+            width: 40%;
+            border-right: 1px solid white;
+
+            .s4-item {
+                padding-top: 10px;
+                padding-bottom: 10px;
+                max-width: 80%;
+
+                .s4-item-title {
+                    background-color: white;
+                    color: var(--mainColor);
+                    padding: 5px 5px;
+                    width: fit-content;
+                    font-size: 10px;
+                    text-transform: uppercase;
+                }
+
+                .s4-item-choice {
+                    font-size: 17px;
+                    margin-top: 5px;
+                    text-transform: uppercase;
+                    font-family: 'Montreal-Medium';
+                }
+            }
+        }
+
+        #s4-right {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 20px;
+            width: 60%;
+            box-sizing: border-box;
+            padding: 0 50px;
+
+            #s4-title {
+                font-size: 20px;
+            }
+
+            #s4-cost {
+                font-size: 35px;
+            }
+
+            .s4-button {
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
