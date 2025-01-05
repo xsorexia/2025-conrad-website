@@ -227,7 +227,7 @@
 
         #s4-left {
             width: 40%;
-            border-right: 1px solid white;
+            border-right: 2px solid white;
 
             .s4-item {
                 padding-top: 10px;
