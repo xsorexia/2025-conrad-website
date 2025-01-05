@@ -28,6 +28,9 @@ Syncopate font -- font weight: 400, 700
     font-weight: 700;
 }
 
+.no-capital {
+    text-transform: none !important;
+}
 body {
     width: 100vw;
     top: 0;

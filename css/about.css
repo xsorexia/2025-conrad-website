@@ -45,11 +45,10 @@
     align-items: center;
     #brand-identity {
         width: 40%;
-        margin-left: 15%
     }
 
     #sc2-desc-div {
-        width: calc(60% - 15% - 50px);
+        width: calc(35% - 50px);
         margin-left: 50px;
 
         .desc {
@@ -71,7 +70,7 @@
                 width: 60%;
 
                 margin-left: 20%;
-                margin-bottom: -5px;
+                margin-bottom: -45px;
             }
 
 
@@ -81,12 +80,28 @@
 
 }
 
-#s4-member-desc-div {
+#sc-d {
+    #sd-dancheImage {
+        width: 100%;
+    }
+
+    position: relative;
+    #sd-role {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        backdrop-filter: blur(10px);
+
+        background-color: #ffffff20;
+
+    }
+}
+
+#sd-member-desc-div {
     width: 60%;
-    background-color: var(--mainColor);
     display: flex;
     flex-direction: row;
-    padding: 30px 10%;
+    padding: 50px 10%;
     margin-left: auto;
     margin-right: auto;
     justify-content: center;
@@ -97,8 +112,8 @@
 
         .member-role {
             font-size: 12px;
-            background-color: white;
-            color: var(--mainColor);
+            background-color: var(--mainColor);
+            color: white;
             width: fit-content;
             padding: 5px 5px;
         }
@@ -107,12 +122,12 @@
             text-transform: uppercase;
             font-family: 'Montreal-Medium';
             font-size: 20px;
-            color: white;
+            color: var(--mainColor);
         }
         .member-email {
             margin-top: 10px;
             font-size: 12px;
-            color: white;
+            color: var(--mainColor);
         }
     }
 }

@@ -130,3 +130,11 @@ function pricingStartOver() {
     document.getElementById("content").style.transform = "translateX(0)"
 
 }
+
+
+
+
+
+function move(loc) {
+    window.location.href = loc;
+}
