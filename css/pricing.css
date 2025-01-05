@@ -1,0 +1,39 @@
+@import url('/css/common.css');
+
+
+.pricing-section-container {
+    min-height: 100dvh;
+}
+
+#sc-1 {
+    min-height: calc(100dvh - 90px);
+
+    #section-1 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+
+        max-width: 1000px;
+        
+
+        .s1-pricing-item {
+            box-sizing: border-box;
+            padding: 20px 20px;
+            width: 30%;
+            border: 2px solid var(--mainColor);
+
+
+            .s1-pricing-button {
+                margin-top: 30px;
+                width: 100%;
+                padding-left: 0;
+                padding-right: 0;
+
+                border: 2px solid var(--mainColor);
+
+            }
+        }
+    }
+}
