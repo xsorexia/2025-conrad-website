@@ -26,3 +26,20 @@ function toggleMission(element) {
     }
 
 }
+
+
+function pricingSelectType(option, element) {
+    document.getElementById("content").style.transform = "translateX(-100vw)"
+    var el = document.getElementById("s2-subtitle-content");
+    if (option == 1) {
+        el.innerHTML = "LOW EARTH ORBIT";
+    } else if (option == 2) {
+        el.innerHTML = "OTHER ORBITS";
+    } else {
+        el.innerHTML = "DEORBIT";
+    }
+}
+
+function pricingChangeType() {
+    document.getElementById("content").style.transform = "translateX(0)"
+}

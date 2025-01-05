@@ -17,19 +17,88 @@
     <div id="content">
         <div id="sc-1" class="section-container pricing-section-container">
             <div id="section-1" class="section pricing-section">
-                <div class="s1-pricing-item">
+                <div class="s1-pricing-item" id="s1-leo-item">
+                    <div id="s1-leo-banner">MOST POPULAR</div>
                     <div class="s1-pricing-title">Low Earth Orbit</div>
-                    <div class="s1-pricing-desc"></div>
-                    <div class="s1-pricing-button btn btn-dark">
+                    <div class="s1-pricing-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. </div>
+                    <div class="s1-pricing-checks">
+                        <div class="s1-pricing-check-item">
+                            <img class="s1-pricing-check-img" src="/img/check.png">
+                            <div class="s1-pricing-check-desc">LEO to LEO</div>
+                        </div>
+                        <div class="s1-pricing-check-item">
+                            <img class="s1-pricing-check-img" src="/img/check.png">
+                            <div class="s1-pricing-check-desc">LEO to LEO</div>
+                        </div>
+                    </div>
+                    <div class="s1-pricing-button btn btn-dark" onclick="pricingSelectType(1, this)">
                         <div class="btn-text">SELECT</div>
                         <div class="btn-background"></div>
                     </div>
                 </div>
                 <div class="s1-pricing-item">
-                    
+                    <div class="s1-pricing-title">Other Orbits</div>
+                    <div class="s1-pricing-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. </div>
+                    <div class="s1-pricing-checks">
+                        <div class="s1-pricing-check-item">
+                            <img class="s1-pricing-check-img" src="/img/check.png">
+                            <div class="s1-pricing-check-desc">LEO to LEO</div>
+                        </div>
+                        <div class="s1-pricing-check-item">
+                            <img class="s1-pricing-check-img" src="/img/check.png">
+                            <div class="s1-pricing-check-desc">LEO to LEO</div>
+                        </div>
+                    </div>
+                    <div class="s1-pricing-button btn btn-dark" onclick="pricingSelectType(2, this)">
+                        <div class="btn-text">SELECT</div>
+                        <div class="btn-background"></div>
+                    </div>
                 </div>
                 <div class="s1-pricing-item">
-                    
+                    <div class="s1-pricing-title">Deorbit</div>
+                    <div class="s1-pricing-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. </div>
+                    <div class="s1-pricing-checks">
+                        <div class="s1-pricing-check-item">
+                            <img class="s1-pricing-check-img" src="/img/check.png">
+                            <div class="s1-pricing-check-desc">LEO to LEO</div>
+                        </div>
+                        <div class="s1-pricing-check-item">
+                            <img class="s1-pricing-check-img" src="/img/check.png">
+                            <div class="s1-pricing-check-desc">LEO to LEO</div>
+                        </div>
+                    </div>
+                    <div class="s1-pricing-button btn btn-dark" onclick="pricingSelectType(3, this)">
+                        <div class="btn-text">SELECT</div>
+                        <div class="btn-background"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="sc-2" class="section-container pricing-section-container">
+            <div id="section-2">
+                <div id="s2-title">CubeSat Mass</div>
+                <div id="s2-subtitle" onclick="pricingChangeType()"><span id="s2-subtitle-content">Low Earth Orbit</span> <span id="s2-type-change">[ CHANGE ]</span></div>
+                <div id="s2-mass-container">
+                    <div class="s2-mass-subcontainer">
+                        <div class="s2-mass-item btn btn-light">                            
+                            <div class="btn-text">1-3kg</div>
+                            <div class="btn-background"></div>
+                        </div>
+                        <div class="s2-mass-item btn btn-light">
+                            <div class="btn-text">3-5kg</div>
+                            <div class="btn-background"></div>
+                        </div>
+                    </div>
+                    <div class="s2-mass-subcontainer">
+                        <div class="s2-mass-item btn btn-light">
+                            <div class="btn-text">5-7kg</div>
+                            <div class="btn-background"></div>
+                        </div>
+                        <div class="s2-mass-item btn btn-dark">
+                            <div class="btn-text">7kg or above</div>
+                            <div class="btn-background"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

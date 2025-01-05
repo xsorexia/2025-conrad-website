@@ -1,8 +1,19 @@
 @import url('/css/common.css');
 
+#content {
+    display: flex;
+    flex-direction: row;
+    width: 200vw;
+
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory; /* Optional: Enables snap-to-section scrolling */
+    transition: 0.5s;
+}
 
 .pricing-section-container {
-    min-height: 100dvh;
+    width: 100vw;
+    flex: 0 0 100vw;             /* Each child takes up 100% of the viewport width */
+
 }
 
 #sc-1 {
@@ -19,10 +30,40 @@
         
 
         .s1-pricing-item {
+            color: var(--mainColor);
             box-sizing: border-box;
             padding: 20px 20px;
-            width: 30%;
+            padding-top: 40px;
+            width: 33%;
             border: 2px solid var(--mainColor);
+
+            .s1-pricing-title {
+                font-family: 'Syncopate';
+                font-weight: 700;
+                font-size: 20px;
+            }
+
+            .s1-pricing-desc {
+                margin-top: 30px;
+            }
+
+            .s1-pricing-checks {
+                margin-top: 30px;
+                .s1-pricing-check-item {
+                    margin-top: 5px;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 15px;
+                    box-sizing: border-box;
+                    padding-left: 10px;
+
+                    .s1-pricing-check-img {
+                        width: 15px;
+                        height: 15px;
+                    }
+                }
+            }
 
 
             .s1-pricing-button {
@@ -35,5 +76,98 @@
 
             }
         }
+
+        #s1-leo-item {
+            position: relative;
+            padding-top: calc(40px + 30px);
+            #s1-leo-banner {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                background-color: var(--mainColor);
+                height: 30px;
+                text-align: center;
+                align-content: center;
+
+                color: white;
+                font-size: 12px;
+            }
+        }
     }
+}
+
+#sc-2 {
+
+    #section-2 {
+        color: var(--mainColor);
+
+        #s2-title {
+            font-family: 'Syncopate';
+            font-weight: 400;
+            font-size: 25px;
+        }
+
+        #s2-subtitle {
+
+            cursor: pointer;
+
+            #s2-subtitle-content {
+                font-family: 'Syncopate';
+                font-weight: 700;
+                font-size: 15px;
+            }
+
+            #s2-type-change {
+                cursor: pointer;
+                font-family: 'Montreal';
+            }
+
+        }
+
+        #s2-subtitle:hover {
+            #s2-type-change {
+                text-decoration: underline;
+            }
+        }
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        gap: 20px;
+    
+        max-width: 800px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+
+        #s2-mass-container {
+            margin-top: 50px;
+            width: 100%;
+            .s2-mass-subcontainer {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                margin-top: 10px;
+
+                .s2-mass-item {
+                    width: 100%;
+                    border: 2px solid var(--mainColor);
+                    text-align: center;
+                    align-content: center;
+                    padding-top: 50px;
+                    padding-bottom: 50px;
+                    .btn-text {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+
 }
