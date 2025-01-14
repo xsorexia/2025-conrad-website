@@ -1,0 +1,23 @@
+#sc-1 {
+    background-color: black;
+    width: 100vw;
+    height: 100dvh;
+    position: relative;
+
+    #wolf-image {
+        position: absolute;
+        height: 100vh;
+        bottom: -50vh;
+    }
+}
+
+#sc-2 {
+    border: 1px solid black;
+    width: 100vw;
+
+}
+
+#sc-3 {
+    height: 100px;
+    width: 100vw;
+}

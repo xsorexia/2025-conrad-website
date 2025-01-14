@@ -8,7 +8,7 @@ $("#contact").load(contact);
 
 var priceList = [
     ["N / A", "Low Earth Orbit", "Other Orbits", "Deorbit"],
-    ["N / A", "Geostationary Transfer Orbit", "Lunar Transfer Orbit", "Mars Transfer Orbit", "Cislunar Transfer Orbit"],
+    ["N / A", "Geostationary Transfer Orbit", "Lunar Transfer Orbit", "Mars Transfer Orbit", "Cytherean Transfer Orbit"],
     ["N / A", "1-3kg", "3-5kg", "5-7kg", "7kg or above"],
     ["N / A", "Standard Launch", "Priority Launch"]
 ]
@@ -137,4 +137,8 @@ function pricingStartOver() {
 
 function move(loc) {
     window.location.href = loc;
+}
+
+function downloadFile(loc) {
+    window.location.href = `/files/${loc}`;
 }
