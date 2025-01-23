@@ -124,6 +124,9 @@
     text-transform: uppercase;
 }
 
+.innerStructure {
+    width: 100vw;
+}
 
 #sc-a {
     margin-top: -10px;
