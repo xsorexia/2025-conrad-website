@@ -159,7 +159,6 @@ html {
     
     font-family: 'Montreal';
     font-size: 20px;
-    text-transform: uppercase;
 }
 
 .desc-bold {
@@ -170,8 +169,13 @@ html {
     color: white;
 }
 
+.bold {
+    font-family: 'Montreal-Bold';
+}
 
-
+.med {
+    font-family: 'Montreal-Medium';
+}
 
 
 
