@@ -1,23 +1,100 @@
-#sc-1 {
-    background-color: black;
+#wolf-title {
     width: 100vw;
-    height: 100dvh;
-    position: relative;
+}
 
-    #wolf-image {
+#sc-v {
+    margin-top: -10px;
+    padding: 100px 0 !important;
+    color: white;
+    background-color: black;
+
+
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: row;
+
+    #s2-background {
+        z-index: 0;
         position: absolute;
-        height: 100vh;
-        bottom: -50vh;
+        top: 0;
+        left: 0;
+        width: 100%;
+        min-height: 100%;
+
+        opacity: 0.3;
+    }
+
+    #section-v {
+        z-index: 1;
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+
+        #sv-title-div {
+            width: calc(50% - 50px);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        #sv-image-div {
+            width: 50%;
+            #sv-image-container {
+                width: 100%;
+                img {
+                    width: 100%;
+                }
+            }
+        }
     }
 }
 
-#sc-2 {
-    border: 1px solid black;
-    width: 100vw;
+#sc-t {
+    margin-top: -10px;
+    padding: 100px 0 !important;
+    color: black;
+    background-color: white;
 
-}
 
-#sc-3 {
-    height: 100px;
-    width: 100vw;
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: row;
+
+    #s2-background {
+        z-index: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        min-height: 100%;
+
+        opacity: 0.3;
+    }
+
+    #section-t {
+        z-index: 1;
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+
+        #st-title-div {
+            width: calc(60% - 50px);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        #st-image-div {
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            img {
+                width: 100%;
+            }
+        }
+    }
 }
